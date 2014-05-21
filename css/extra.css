@@ -1,0 +1,7 @@
+ol, ul {
+    list-style: disc;
+    padding-left: 30px;
+    text-align: left;
+    line-height: 1.5em;
+    list-style-position: inside;
+}

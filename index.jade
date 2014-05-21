@@ -1,0 +1,79 @@
+!!! 5
+html(lang='en')
+head
+  meta(charset='utf-8')
+  meta(name='viewport', content='width=1024')
+  meta(name='apple-mobile-web-app-capable', content='yes')
+  title Secure Infrastructure Project
+  meta(name='description', content='Penetrationtest für Dummies')
+  meta(name='author', content='SIP')
+  link(href='http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic', rel='stylesheet')
+
+  link(href='css/impress-demo.css', rel='stylesheet')
+  link(href='css/extra.css', rel='stylesheet')
+  link(rel='shortcut icon', href='favicon.png')
+  link(rel='apple-touch-icon', href='apple-touch-icon.png')
+body.impress-not-supported
+    #impress
+      #start.title.step(data-x='-1000', data-y='-2800', data-scale='2')
+        h1(style='font-size:200%; text-align: center') Penetrationtest für Dummies
+
+      .step.slide(data-x='-1000', data-y='-1500')
+
+        q(style='font-size:200%; text-align: center; margin-top:20px;') Agenda
+        ul(style='font-size: 1.4em;')
+          li Teamaufteilung
+          li Aufgabenteil Literaturarbeit
+          ul
+            li BSI / OSSTMM
+          li Aufgabenteil Praktische Aufgabe
+          ul
+            li Netzwerk Administration
+            li Vetrag
+            li BSI Module
+          li Ausblick
+      .step.slide(data-x='0', data-y='-1500')
+        q(style='font-size:150%; text-align: center; margin-top:20px;') BSI
+        ul(style='font-size: 1.4em;')
+          li Leicht zu verstehen
+          li In klare Module strukturiert
+          li Z.T. Allgemein gehalten
+          li Explizit für Penetration Tests
+      .step.slide(data-x='1000', data-y='-1500')
+        q(style='font-size:150%; text-align: center; margin-top:20px;') OSSTMM
+        ul(style='font-size: 1.4em;')
+          li Unübersichtlich / Mehr Erfahrung
+          li Nicht unbedingt für Laien
+          li Viel Theorie / Sehr präzise
+          li Deckt alle Security-Bereiche ab
+      .step.slide(data-x='2000', data-y='-1500')
+        q(style='font-size:150%; text-align: center; margin-top:20px;') Praktische Arbeit
+      .step(data-x='1500', data-y='-2800', data-rotate='15', data-scale='2')
+        q(style='font-size:120%; text-align: center; margin-top:20px;') Teamaufteilung
+        ul(style='font-size: 1.2em;') Anlagenbetreiber
+          li Phillip Busse
+          li Markus Wolf
+        ul(style='font-size: 1.2em;') Penetration Tester
+          li Dmitry Aleksandrov
+          li Matthias Eiserloh
+          li Luigi Grimaldi
+      .step.slide(data-x='-1000', data-y='-500')
+        q(style='font-size:150%; text-align: center; margin-top:20px;') Netzwerkadministration
+        ul(style='font-size: 1.4em;')
+          li VMs (OS, Services)
+          li Switch/HUB (Wie verbunden)
+          li Internet (Simuliert)
+          li Probleme
+
+      #overview.step(data-x='0', data-y='-1000', data-scale='8')
+
+    .hint
+      p Use a spacebar or arrow keys to navigate
+    script
+      if ("ontouchstart" in document.documentElement) {
+      document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+      }
+
+    script(src='js/impress.js')
+    script
+      impress().init();
