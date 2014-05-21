@@ -33,21 +33,33 @@ body.impress-not-supported
             li BSI Module
           li Ausblick
       .step.slide(data-x='0', data-y='-1500')
-        q(style='font-size:150%; text-align: center; margin-top:20px;') BSI
-        ul(style='font-size: 1.4em;')
+        q(style='font-size:120%; text-align: center; margin-top:10px;') BSI
+        ul(style='font-size: 1.2em;')
           li Leicht zu verstehen
           li In klare Module strukturiert
           li Z.T. Allgemein gehalten
           li Explizit für Penetration Tests
-      .step.slide(data-x='1000', data-y='-1500')
-        q(style='font-size:150%; text-align: center; margin-top:20px;') OSSTMM
-        ul(style='font-size: 1.4em;')
+        q(style='font-size:120%; text-align: center; margin-top:10px;') OSSTMM
+        ul(style='font-size: 1.2em;')
           li Unübersichtlich / Mehr Erfahrung
           li Nicht unbedingt für Laien
           li Viel Theorie / Sehr präzise
           li Deckt alle Security-Bereiche ab
-      .step.slide(data-x='2000', data-y='-1500')
+      .step.slide(data-x='1000', data-y='-1500')
         q(style='font-size:150%; text-align: center; margin-top:20px;') Praktische Arbeit
+        ul Praktische Arbeit
+          li Anlagenbetreiber
+          ul(style='list-style: circle; padding-left: 60px;')
+            li Einrichten der Anlage
+            li Strategische Vorbereitung
+          li Penetrationstester
+            ul(style='list-style: circle; padding-left: 60px;')
+              li Durchführung des Tests
+              li Umfassende Dokumentation
+              ul
+                li Netzzugangsstrategie
+                li Sicherungsmaßnahmen
+                li Schwachstellen
       .step(data-x='1500', data-y='-2800', data-rotate='15', data-scale='2')
         q(style='font-size:120%; text-align: center; margin-top:20px;') Teamaufteilung
         ul(style='font-size: 1.2em;') Anlagenbetreiber
@@ -57,22 +69,40 @@ body.impress-not-supported
           li Dmitry Aleksandrov
           li Matthias Eiserloh
           li Luigi Grimaldi
-      .step.slide(data-x='-1000', data-y='-500')
+      .step.slide(data-x='2000', data-y='-1500')
         q(style='font-size:150%; text-align: center; margin-top:20px;') Netzwerkadministration
         ul(style='font-size: 1.4em;')
           li VMs (OS, Services)
-          li Switch/HUB (Wie verbunden)
-          li Internet (Simuliert)
+          li Netzwerkstruktur
           li Probleme
+      .step.slide(data-x='-1000', data-y='-500')
+        q(style='font-size:150%; text-align: center; margin-top:20px;') Vertrag
+        ul(style='font-size: 1.4em;')
+          li Grund des Vertrags
+          li Vertragsaufbau nach BSI
+          ul
+            li Zielsetzung
+            li Art
+            li Techniken
+      .step.slide(data-x='0', data-y='-500')
+        q(style='font-size:150%; text-align: center; margin-top:20px;') BSI - Module
+        img(src='1.jpg', style="margin-left:-20px; height:auto; width:auto; max-width:850px; max-height:550px;")
+      .step.slide(data-x='1000', data-y='-500')
+        q(style='font-size:150%; text-align: center; margin-top:20px;') Beispiel
+        img(src='2.jpg', style="margin-left:30px; height:auto; width:auto; max-width:850px; max-height:550px;")
+      .step.slide(data-x='2000', data-y='-500')
+        q(style='font-size:150%; text-align: center; margin-top:20px;') Ausblick
+        q(style='font-size:130%;') Was sind die nächsten Schritte?
+        ul(style='font-size: 1.4em;')
+          li Testdurchführung
+          li Weitere Einarbeitung in die Literatur
+          li Abgleich mit Ganttchart
 
-      #overview.step(data-x='0', data-y='-1000', data-scale='8')
+      .step(data-x='500', data-y='2500', data-z="200", data-rotate-x='-60', data-scale='5')
+        h1(style='font-size:150%; text-align: center; margin-top:20px;') Vielen Dank für Ihre Aufmerksamkeit
 
     .hint
       p Use a spacebar or arrow keys to navigate
-    script
-      if ("ontouchstart" in document.documentElement) {
-      document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
-      }
 
     script(src='js/impress.js')
     script
